@@ -1,5 +1,6 @@
- */*         #ignore all files in each directory
- !*/*.c      #unignore .c files in each directory
- !*/*.cpp    #unignore .cpp files in each directory
- !*/*.h      #unignore .h header files in each directory
- !.gitignore #unignore .gitignore
+*            #ignore everything
+!/**/        #white-listing the parent folders recursively
+!*.c         #unignore .c files in each directory
+!*.cpp       #unignore .cpp files in each directory
+!*.h         #unignore .h header files in each directory
+!*.gitignore #unignore .gitignore

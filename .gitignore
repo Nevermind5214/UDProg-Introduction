@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Files without extensions
+!*.*
+
 # Compiled Object files
 *.slo
 *.lo
@@ -30,6 +33,3 @@
 *.exe
 *.out
 *.app
-
-# Files without extensions
-!*.*

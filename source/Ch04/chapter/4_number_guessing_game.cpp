@@ -4,32 +4,35 @@ int main()
 {
 	int high = 100;
 	int low = 1;
-	int myguess = ((high + low - 1) + 0.5) / 2;
+	int myguess = ((high + low - 1) / 2.0)+  0.5;
 	char inchar = ' ';
 	
 	cout << "Think of a number between " << low << " and " << high << "!\n";
 	
-	while(high >= low && myguess >= low)
+	while(true)
 	{
-		myguess = ((high + low - 1) + 0.5) / 2;
 		cout << "high: " << high << " low: " << low << " myguess: " << myguess << endl;
-		cout << "Is the number you are thinking of less than " << myguess << "? (y / n)\n";
-		cin >> inchar;
-		
-		if(inchar == 'y'){
-			high = myguess - 1;
-		}
-		
-		else if(inchar == 'n'){
-			low = myguess + 1;
-		}
+		if(high <= low) break;
+		else
+		{
+			cout << "Is the number you are thinking of less than " << myguess << "? (y/n)\n";
+			cin >> inchar;
 
-		else cout << "(y / n)!!!!!!!\n";
+			if(inchar == 'y'){
+				high = myguess - 1;
+			}
+		
+			else if(inchar == 'n'){
+				low = myguess + 1;
+			}
+
+			else cout << "(y / n)!!!!!!!\n";
+
+			myguess = ((high + low - 1) / 2.0)+  0.5;
+		}
 	}
 	cout << "high: " << high << " low: " << low << " myguess: " << myguess << endl;
-	if(inchar == 'y') cout << "Your number is: " << myguess-1 << endl;
-	else if(inchar == 'n') cout << "Your number is: " << myguess+1 << endl;
-	else error("BUTA VAGY");
-	
+	cout << "Your number is: " << myguess << endl;
+
 	return 0;
 }

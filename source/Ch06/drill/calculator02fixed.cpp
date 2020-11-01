@@ -169,7 +169,11 @@ double expression()
 int main()
 try
 {
-    cout << "Welcome to our simple calculator.\nPlease enter expressions using floating-point numbers.\nThe operators available are: (, ), +, -, *, /, %\n";
+    cout << "Welcome to our simple calculator.\n";
+    cout << "Please enter expressions using floating-point numbers.\n";
+    cout << "The operators available are: (, ), +, -, *, /, %\n";
+    cout << "Type \"=\" to to print the result\n";
+    cout << "Type \"x\" to exit the application\n";
     
     double val {0};
 

@@ -27,7 +27,7 @@ void swap_r(int& a,int& b)
   b = temp;
 }
 
-/*void swap_cr(const int& a,const int& b)
+/*void swap_cr(const int& a,const int& b)  nem jó mert konstans
 {
   int temp;
   temp = a;

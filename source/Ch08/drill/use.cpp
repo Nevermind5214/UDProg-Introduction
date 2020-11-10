@@ -1,5 +1,5 @@
 #include "./my.h"
-#include "../../std_lib_facilities.h"
+#include "../../std_lib_facilities.h" //kell a cout-hoz
 
 int foo = 7;
 
@@ -8,7 +8,7 @@ int main()
     print_foo();
     print(99);
     int x = 7;
-    int y =9;
+    int y = 9;
     //Try calling each swap like this
     // replace ? by v, r, or cr
 
@@ -33,7 +33,7 @@ int main()
     swap_v(7.7,9.9);
     cout << "dx_v=" << dx_v << " dy_v =" << cy_v <<endl;
 
-    /*
+    /* ez nem fordul le mert konstans
     // r
     swap_r(x,y);
     swap_r(7,9);

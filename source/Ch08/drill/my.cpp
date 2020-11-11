@@ -3,28 +3,30 @@
 
 void print_foo()
 {
-    cout << "foo=" << foo << endl;
+	cout << "foo=" << foo << endl;
 }
 
 void print(int i)
 {
-    cout << "i=" << i << endl;
+	cout << "i=" << i << endl;
 }
 
 void swap_v(int a,int b)
 {
-  int temp;
-  temp = a;
-  a=b;
-  b = temp;
+	cout << "svap_v: a=" << a << " b=" << b <<endl;
+	int temp;
+	temp = a;
+	a=b;
+	b = temp;
+	cout << "svap_v: a=" << a << " b=" << b <<endl;
 }
 
 void swap_r(int& a,int& b)
 {
-  int temp;
-  temp = a;
-  a=b;
-  b = temp;
+	int temp;
+	temp = a;
+	a=b;
+	b = temp;
 }
 
 /*void swap_cr(const int& a,const int& b)  nem jó mert konstans

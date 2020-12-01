@@ -1,6 +1,6 @@
 #include "../../std_lib_facilities.h"
 
-// Define a global int array ga of ten int s initialized to 1, 2, 4, 8, 16, etc.
+// Define a global int array ga of ten ints initialized to 1, 2, 4, 8, 16, etc.
 const int gasize = 10;
 int ga[gasize] = { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 };
 

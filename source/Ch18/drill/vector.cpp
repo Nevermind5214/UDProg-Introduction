@@ -18,7 +18,7 @@ void f(const vector<int>& myVector) {
 		cout << "lv[" << i << "]= " << lv[i] << endl;
 	}
 
-	// Define a local vector<int> lv2 ; initialize it to be a copy of the argument vector.
+	// Define a local vector<int> lv2 and initialize it to be a copy of the argument vector.
 	vector<int> lv2(myVector);
 
 	// Print out the elements of lv2.
@@ -36,7 +36,7 @@ try {
 	cout << "Call f() with gv as its argument." << endl;
 	f(gv);
 
-	// Define a vector<int> vv , and initialize it with the first ten factorial values (1, 2*1, 3*2*1, 4*3*2*1, etc.).
+	// Define a vector<int> vv and initialize it with the first ten factorial values (1, 2*1, 3*2*1, 4*3*2*1, etc.).
 	vector<int> vv;
 	vv.push_back(1);
 	for (int i = 1; i < 10; ++i) {
